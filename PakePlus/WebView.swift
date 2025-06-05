@@ -25,6 +25,8 @@ struct WebView: UIViewRepresentable {
             )
             webView.configuration.userContentController.addUserScript(userScript)
         }
+
+        // webView.customUserAgent = ""
         
         // disable double tap zoom
         let script = """
